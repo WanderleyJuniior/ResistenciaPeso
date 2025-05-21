@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RESISTÊNCIA AOS PESOS</title>
+  <link rel="icon" type="image/png" href="imagens/5-Photoroom.png">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <video id="video" autoplay muted loop playsinline>
+    <source src="imagens/background.mp4" type="video/mp4">
+  </video> 
+  
+  <div class="container">
+    <h1>PROVA DE RESISTÊNCIA AO PESOS (RP)</h1>
+    <div class="formula"><strong> Fórmula: <b>RP = (LD + LE) / 2 <b></strong></div>
+
+    <input type="number" id="ld" placeholder=" Lado Direito (LD)" />
+    <input type="number" id="le" placeholder=" Lado Esquerdo (LE)" />
+    
+    <div style="display: flex; justify-content: space-between; gap: 1rem;">
+      <button class="calculate-btn" onclick="calcular()">Calcular</button>
+      <button class="reset-btn" onclick="resetar()">Novo Cálculo</button>
+    </div>
+
+    <div id="resultado"></div>
+  </div>
+              
+  <footer>
+   Desenvolvido por Wanderley Júnior | MENINO DA T.I
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
